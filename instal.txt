@@ -1,0 +1,30 @@
+Install Openbox :
+
+sudo apt-get install openbox
+
+Install Paket :
+sudo apt-get install openbox obconf obmenu nitrogen tint2 compton
+
+setting :
+obmenu-generator -p -i
+
+Otomatisasi Obmenu melalui cara berikut :
+$ sudo apt-get install build-essential cpanminus git
+$ git clone git://github.com/trizen/obmenu-generator
+$ sudo cp obmenu-generator/obmenu-generator /usr/bin
+$ sudo cp -r obmenu-generator/schema.pl ~/.config/obmenu-generator
+$ sudo cpanm Linux::DesktopFiles
+$ sudo cpanm Data::Dump
+$ sudo chmod +x /usr/bin/obmenu-generator
+
+NSTALL URXVT :
+sudo apt-get install urxvt-unicode
+tunggu sampai proses instalasi selesai.
+kemudian kita percantik tampilan urxvtnya
+
+configurasi urxvt terdapat pada ~/.Xdefault pada directory /home.
+
+gedit ~/.Xdefault
+
+kemudian kita load konfigurasinya dengan memasukkan perintah berikut :
+xrdb ~/.Xdefault
